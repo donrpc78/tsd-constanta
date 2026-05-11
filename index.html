@@ -133,10 +133,13 @@ function showSlides() {
 <div class="card">
     <h3>Voluntariat</h3>
     <p>Am participat la acțiuni de sprijin pentru comunitate și activități sociale locale.</p>
-    <img class="slide" src="poza7.png">
-    <img class="slide" src="poza8.png">
-    <img class="slide" src="poza9.png">
-    </div>
+    <div class="slideshow-container">
+
+<img class="slide" src="poza7.png">
+<img class="slide" src="poza8.png">
+<img class="slide" src="poza9.png">
+
+</div>
 
 <style>
 .slideshow-container {
@@ -174,100 +177,116 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
 
     setTimeout(showSlides, 3000);
-    
-</div>
+}
+</script>
+
+    </div>
+
 
 <div class="card">
     <h3>Educație</h3>
     <p>Susținem inițiative dedicate elevilor și studenților din municipiu.</p>
-    <img class="slide" src="poza10.png">
-    <img class="slide" src="poza11.png">
-    <img class="slide" src="poza6.png">
+  <div class="slideshow-container">
+
+<img class="slide" src="poza6.png">
+<img class="slide" src="poza10.png">
+<img class="slide" src="poza11.png">
+
+</div>
+
+<style>
+.slideshow-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+</style>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+
+    let slides = document.getElementsByClassName("slide");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 3000);
+}
+</script>
+
 </div>
 
 <div class="card">
     <h3>Evenimente</h3>
     <p>Organizăm întâlniri, dezbateri și activități pentru tineri.</p>
-    <img class="slide" src="poza12.png">
-    <img class="slide" src="poza5.png">
-    <img class="slide" src="poza13.png">
+  <div class="slideshow-container">
+
+<img class="slide" src="poza5.png">
+<img class="slide" src="poza12.png">
+<img class="slide" src="poza13.png">
+
+</div>
+
+<style>
+.slideshow-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+</style>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+
+    let slides = document.getElementsByClassName("slide");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 3000);
+}
+</script>
+
 
     </div>
-
-<style>
-.slideshow-container {
-    width: 100%;
-    max-width: 900px;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.slide {
-    width: 100%;
-    display: none;
-    border-radius: 10px;
-}
-</style>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-
-    let slides = document.getElementsByClassName("slide");
-
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    slideIndex++;
-
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-
-    setTimeout(showSlides, 3000);
-
-<style>
-.slideshow-container {
-    width: 100%;
-    max-width: 900px;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.slide {
-    width: 100%;
-    display: none;
-    border-radius: 10px;
-}
-</style>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-
-    let slides = document.getElementsByClassName("slide");
-
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    slideIndex++;
-
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-
-    setTimeout(showSlides, 3000);
-</div>
 
 
 <footer>
